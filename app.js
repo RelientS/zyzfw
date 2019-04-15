@@ -1,5 +1,17 @@
 //app.js
 App({
+  globalData:{
+    zh_lang: { //中文语言集
+    vol: "志愿者入口",
+    pat: "患者入口",
+    swit: "切换语言"
+  },
+    zy_lang:{ //藏语语言集
+      vol: "zyzrk",
+      pat: "hzrk",
+      swit: "qhyy"
+    }
+  },
   onLaunch: function () {
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
@@ -33,7 +45,4 @@ App({
       }
     })
   },
-  globalData: {
-    userInfo: null
-  }
 })
