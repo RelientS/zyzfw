@@ -1,0 +1,10 @@
+<!--index.wxml-->
+<view class="container">
+  <button class="lang_btn" bindtap="lang_switch">切换语言</button>
+  <view class="user_ch user_vol" bindtap='bindUserVol'>
+    <text class="user_info">志愿者入口</text>
+  </view>
+  <view class="user_ch user_pat" bindtap='bindUserPat'>
+    <text class="user_info">患者入口</text>
+  </view>
+</view>
