@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<view class="container">
+<!-- <text class="training_text">{{train_text}}</text> -->
+<button class="training_submit training" id="Submit">{{train_submit}}</button>
+<button class="training_cancel training">{{cancel}}</button>
+</view>

@@ -1,0 +1,27 @@
+/* .training_text{
+  width: 220rpx;
+  height: 100rpx;
+  color:#3299CC;
+  margin: 0rpx 30rpx;
+} */
+.training{
+    width: 300rpx;
+    height: 140rpx;
+    color:#FFFFFF;
+    margin:100rpx auto 0;
+    text-align: center;
+    font-size: 48rpx;
+    /* line-height: 280rpx; */
+    border-radius: 25rpx;
+    font-weight: bold;
+}
+.training_submit{
+  color:#3299CC;
+  background: #FFFFFF;
+  border: 7rpx solid #3299CC;
+  margin-top:170rpx;
+}
+.training_cancel{
+  background: #3299CC;
+  margin-top:170rpx;
+}

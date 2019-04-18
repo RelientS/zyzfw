@@ -1,0 +1,56 @@
+/**index.wxss**/
+.login_btn{
+  display: inline-block;
+  width: 220rpx;
+  height: 100rpx;
+  color:whitesmoke;
+  margin: 0rpx 30rpx;
+}
+.btn_container{
+  margin-top:100rpx;
+}
+.user_login{
+  background:#3299CC;
+}
+.user_signin{
+  color: #3299CC;
+  background: white;
+}
+.id_input{
+  margin-top: 70rpx;
+  border: 2px solid black;
+  padding: 0 30rpx;
+  border-radius: 10rpx;
+  width: 500rpx;
+  height: 100rpx;
+}
+.phone_input{
+ border: 2px solid black;
+ border-radius: 10rpx;
+ margin-top: 70rpx;
+ padding: 0 30rpx;
+ width: 500rpx;
+ height: 100rpx;
+}
+.name_input{
+ border: 2px solid black;
+ border-radius: 10rpx;
+ margin-top: 70rpx;
+ padding: 0 30rpx;
+ width: 500rpx;
+ height: 100rpx;
+}
+.picker{
+ border: 2px solid black;
+ border-radius: 10rpx;
+ margin-top: 70rpx;
+ padding: 0 30rpx;
+ padding-top:20rpx;
+ width: 500rpx;
+ height: 80rpx;
+ display: inline-block;
+ color:#aaa;
+}
+.picker_position{
+  margin-top:-50rpx;
+}

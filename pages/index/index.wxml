@@ -7,4 +7,7 @@
   <view class="user_ch user_pat" bindtap='bindUserPat'>
     <text class="user_info">{{lang.pat}}</text>
   </view>
+  <!--
+  <image src="../../img/bg1.png" class="img"></image>
+  -->
 </view>

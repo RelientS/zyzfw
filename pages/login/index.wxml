@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<view class="container">
+  <input class="id_input" placeholder='{{ph}}'></input>
+  <view class="btn_container">
+    <button class=".user_login login_btn" bindtap='login'>{{login}}</button>
+    <button class=".user_signin login_btn" bindtap='signin'>{{signin}}</button>
+  </view>
+</view>

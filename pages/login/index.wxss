@@ -1,0 +1,26 @@
+/**index.wxss**/
+.login_btn{
+  display: inline-block;
+  width: 220rpx;
+  height: 100rpx;
+  color:whitesmoke;
+  margin: 0rpx 30rpx;
+}
+.btn_container{
+  margin-top:400rpx;
+}
+.user_login{
+  background:#3299CC;
+}
+.user_signin{
+  background: white;
+  color:#3299CC;
+}
+.id_input{
+  margin-top: 130rpx;
+  border: 2px solid black;
+  padding: 0 30rpx;
+  border-radius: 10rpx;
+  width: 410rpx;
+  height: 100rpx;
+}
