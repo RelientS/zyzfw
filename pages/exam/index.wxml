@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view class="container">
+  <text class="question_block">{{question}}</text>
+  <radio-group class="" bindchange="">
+  <label class="">
+    <radio value="right" />
+    {{right}}
+  </label>
+  <label class="">
+    <radio value="wrong" />
+    {{wrong}}    
+  </label>
+</radio-group>
+  <view class="btn_container">
+    <button class=".user_login login_btn" bindtap='login'>{{prev}}</button>
+    <button class=".user_login login_btn" bindtap='signin'>{{next}}</button>
+  </view>
+</view>

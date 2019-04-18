@@ -4,28 +4,36 @@ const app = getApp()
 
 Page({
   data: {
-    lang:app.globalData.zh_lang
+    identity:'zh',
+    lang:app.globalData.lang
   },
-  onLoad:  () =>{
+  onLoad:  function(){
+    app.globalData.lang = app.globalData.lang_zh;
+    this.setData({ lang: app.globalData.lang });  //首次打开采用中文语言集
+    wx.setStorageSync('user_lang', app.globalData.lang_zh);
   },
   bindUserVol:  ()=> {
+    wx.setStorageSync('user_identity', 'vol'); //从首页进入的用户身份储存在本地
     wx.navigateTo({
-      url: '../volunteer/index'
+      url: '../login/index' 
     })
   },
   bindUserPat:  ()=> {
+    wx.setStorageSync('user_identity', 'pat'); 
     wx.navigateTo({
-      url: '../patient/index'
+      url: '../login/index'
     })
   },
   langSwitch:function(){
     //切换语言
     var _this = this;
-    if (_this.data.lang == app.globalData.zh_lang){
-      _this.setData({ lang: app.globalData.zy_lang }) //一定要用setData方法才会触发重新渲染
+    if (_this.data.identity == 'zy'){
+      wx.setStorageSync('user_lang', app.globalData.lang_zh);
+      _this.setData({ identity:'zh' })
     }else{
-      _this.setData({ lang: app.globalData.zh_lang })  
+      wx.setStorageSync('user_lang', app.globalData.lang_zy);
+      _this.setData({ identity: 'zy' })
     }
-
+    _this.setData({ lang: wx.getStorageSync('user_lang') }); //一定要用setData方法才会触发重新渲染
   }
 })

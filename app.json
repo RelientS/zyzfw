@@ -1,14 +1,20 @@
 {
-  "pages":[
+  "pages": [
+
     "pages/index/index",
+    "pages/exam/index",
     "pages/volunteer/index",
     "pages/patient/index",
-    "pages/logs/logs"
+    "pages/login/index",
+    "pages/logs/logs",
+    "pages/signin/index",
+    "pages/training/index"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
-  }
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
 }
