@@ -1,6 +1,6 @@
 {
   "pages": [
-
+    
     "pages/index/index",
     "pages/exam/index",
     "pages/volunteer/index",
@@ -15,6 +15,5 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
-  },
-  "sitemapLocation": "sitemap.json"
+  }
 }

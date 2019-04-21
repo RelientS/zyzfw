@@ -28,6 +28,11 @@ Page({
       confirm: _this.data.lang.confirm
     });
   },
+  submit:()=>{
+    wx.navigateTo({
+      url: '../exam/index',
+    })
+  },
   confirm: function () {
     var _this = this;
     wx.request({

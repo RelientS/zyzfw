@@ -1,26 +1,63 @@
 /**index.wxss**/
+page{
+  height: 100%
+}
+swiper{
+  height: 100%;
+}
+swiper-item{
+  height: 100%;
+
+}
 .login_btn{
   display: inline-block;
-  width: 220rpx;
+  width: 250rpx;
   height: 100rpx;
   color:whitesmoke;
-  margin: 0rpx 30rpx;
-}
-.btn_container{
-  margin-top:400rpx;
-}
-.user_login{
+  margin: 0;
   background:#3299CC;
 }
-.user_signin{
-  background: white;
-  color:#3299CC;
+.next_btn{
+  margin-left: 50rpx;
 }
-.id_input{
-  margin-top: 130rpx;
-  border: 2px solid black;
+.submit_btn{
+  margin-top: 10rpx;
+  width: 550rpx;
+}
+.btn_container{
+  margin-top:120rpx;
+  padding: 0 100rpx;
+}
+.question_block{
+  border: 1px solid black;
   padding: 0 30rpx;
   border-radius: 10rpx;
-  width: 410rpx;
-  height: 100rpx;
+  display:inline-block;
+  overflow:scroll;
+  width:520rpx;
+  height:400rpx;
+  position:absolute;
+  top: 50%;
+  margin-left:85rpx;
+  margin-top:-500rpx;
 }
+.radio_wrong{
+ padding-left:70rpx
+}
+radio{
+  margin-top:330px;
+  background: none;
+  margin-left:70px;
+}
+radio .wx-radio-input{
+  border-radius: 6rpx;
+  box-sizing: border-box;
+}
+.page-section{
+  width: 100%;
+}
+.swiper-item{
+  display: block;
+  height: 1500px;
+}
+ 

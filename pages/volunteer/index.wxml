@@ -1,4 +1,9 @@
 <!--index.wxml-->
 <view class="container">
-volunteer
+  <view>{{name}}</view>
+  <image></image>
+  <button bindtap='info'>个人信息</button>
+  <button bindtap='apply'>申请志愿</button>
+  <button bindtap='status'>志愿状态</button>
+  <button bindtap='complete'>完成志愿</button>
 </view>

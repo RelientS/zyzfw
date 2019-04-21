@@ -5,8 +5,7 @@ App({
     vol: "志愿者入口",
     pat: "患者入口",
     swit: "切换语言",
-    userVol:"请输入身份证",
-    userPat:"请输入姓名",
+    userLogin:"请输入手机号",
     login:"登录",
     signin:"注册",
     user_name:"姓名",
@@ -23,6 +22,13 @@ App({
     wrong: '错',
     prev: '上一题',
     next: '下一题',
+    submit:'提交答案',
+    passed:'恭喜通过考试',
+    failed: '未通过测试',
+    failtip: '请抽取新试卷重新作答',
+    notFin: '尚未完成作答',
+    first: '已经是第一题了',
+    last: '已经是最后一题了'
     },
     lang_zy:{ //藏语语言集
       vol: "དང་བླངས་པའི་འཇུག་སྒོ།",
@@ -45,6 +51,12 @@ App({
       wrong: 'ནོར།',
       prev: 'སྟེང་གི་གནད་དོན་ལ།',
       next: 'འོག་གི་གནད་དོན་ལ།',
+      submit: 'tjda',
+      passed: 'gxtgks',
+      failed: 'wtgcs',
+      failtip: 'qcqxsjcxzd',
+      notFin: 'swwczd'
+
     },
     //lang:null, 判断使用的语言集，也创建了一个变量，如果有更好的方法保存该全局变量也可修改
     //更好的办法是应用本地储存能力 wx.setStorageSync

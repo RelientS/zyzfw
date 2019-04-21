@@ -1,18 +1,26 @@
 <!--index.wxml-->
-<view class="container">
-  <text class="question_block">{{question}}</text>
-  <radio-group class="" bindchange="">
-  <label class="">
-    <radio value="right" />
-    {{right}}
-  </label>
-  <label class="">
-    <radio value="wrong" />
-    {{wrong}}    
-  </label>
-</radio-group>
-  <view class="btn_container">
-    <button class=".user_login login_btn" bindtap='login'>{{prev}}</button>
-    <button class=".user_login login_btn" bindtap='signin'>{{next}}</button>
-  </view>
-</view>
+      <swiper
+        indicator-dots="{{fal}}" vertical="{{fal}}"
+        duration="100" current='{{current}}'
+      >
+          <swiper-item wx:for="{{examArr}}" wx:key="*this" catchtouchmove='catchTouchMove'>
+            <view class="swiper-item">
+              <text class="question_block">{{examArr[index]}}</text>
+              <radio-group class="" bindchange="radioChange{{index}}">
+              <label class="radio_right">
+                <radio value="1" />
+                {{right}}
+              </label>
+              <label class="radio_wrong">
+                <radio value="0"/>
+                {{wrong}}    
+              </label>
+            </radio-group>
+              <view class="btn_container">
+                <button class="login_btn" bindtap='prev'>{{prev}}</button>
+                <button class="login_btn next_btn" bindtap='next'>{{next}}</button>
+                <button class="login_btn submit_btn" bindtap='submit'>{{submit}}</button>
+              </view>
+            </view>
+          </swiper-item>
+      </swiper> 

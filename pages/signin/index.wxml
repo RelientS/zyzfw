@@ -2,30 +2,30 @@
 <view class="container">
   <view>
   <picker
-    mode="region"
+    mode="selector"
     bindchange="bindRegionChange"
     value="{{region}}"
-    custom-item="{{customItem}}" 
+    range="{{region}}"
   >
     <view class="picker picker_position">
-      {{area}}:{{region[1]}} {{region[2]}}
+      {{area}}:{{region[index1]}}
     </view>
   </picker>
 </view>
-  <input class="id_input" placeholder='{{ph}}'  wx:if="{{identity=='vol'}}"></input>
-  <input class="phone_input" placeholder='{{phone}}'></input>
-  <input class="name_input" placeholder='{{name}}'></input>
+  <input class="id_input" placeholder='{{ph}}'  wx:if="{{identity=='vol'}}" bindinput="userInput1"></input>
+  <input class="phone_input" placeholder='{{phone}}' bindinput="userInput2"></input>
+  <input class="name_input" placeholder='{{name}}' bindinput="userInput3"></input>
   <picker 
     bindchange="bindPickerChange"
     value="{{index}}" 
     range="{{array}}"
   >
    <view class="picker">
-      {{gender}}：{{array[index]}}
+      {{gender}}：{{array[index2]}}
     </view>
   </picker>
   <view class="btn_container">
     <button class=".user_login login_btn" bindtap='confirm'>{{confirm}}</button>
-    <button class=".user_signin login_btn" bindtap=''>{{cancel}}</button>
+    <button class=".user_signin login_btn" bindtap='back'>{{cancel}}</button>
   </view>
 </view>
